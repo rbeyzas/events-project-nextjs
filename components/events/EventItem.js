@@ -1,4 +1,8 @@
 // import Image from 'next/image';
+import AddressIcon from '../SvgIcons/AddressIcon';
+import ArrowRightIcon from '../SvgIcons/ArrowRightIcon';
+import CalendarIcon from '../SvgIcons/CalendarIcon';
+import Button from '../ui/Button';
 import classes from './EventItem.module.css';
 function EventItem(props) {
   const { title, image, date, location, id } = props;
@@ -18,19 +22,21 @@ function EventItem(props) {
         <div className={classes.summary}>
           <h2>{title}</h2>
           <div className={classes.date}>
-            {/* <DateIcon /> */}
+            <CalendarIcon />
             <time>{humanReadableDate}</time>
           </div>
           <div className={classes.address}>
-            {/* <AddressIcon /> */}
+            <AddressIcon />
             <address>{formattedAddress}</address>
           </div>
         </div>
         <div className={classes.actions}>
-          <button link={exploreLink}>
+          <Button link={exploreLink}>
             <span>Explore Event</span>
-            <span className={classes.icon}>{/* <ArrowRightIcon /> */}</span>
-          </button>
+            <span className={classes.icon}>
+              <ArrowRightIcon />
+            </span>
+          </Button>
         </div>
       </div>
     </li>
