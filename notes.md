@@ -1,0 +1,1 @@
+- files and folders (images) stored outside of public are not made accesible by NextJS - visitors can not load files from there
