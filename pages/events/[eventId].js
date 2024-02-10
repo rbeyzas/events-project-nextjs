@@ -1,6 +1,7 @@
 import EventContent from '@/components/EventDetail/EventContent';
 import EventLogistics from '@/components/EventDetail/EventLogistics';
 import EventSummary from '@/components/EventDetail/EventSummary';
+import Comments from '@/components/Inputs/Comments';
 import { getEventById, getFeaturedEvents } from '@/helpers/api-utils';
 import { Fragment } from 'react';
 
@@ -27,6 +28,7 @@ function EventDetailPage(props) {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
+      <Comments eventId={event.id} />
     </Fragment>
   );
 }
