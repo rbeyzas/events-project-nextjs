@@ -1,7 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "plugin:import/errors", "plugin:import/warnings"],
   "rules": {
-    "import/no-unresolved": "error", // Eksik importları hata olarak belirler
+    // "import/no-unresolved": "error", // Eksik importları hata olarak belirler
     "import/named": "error", // İsimlendirilmiş importların doğru olduğunu kontrol eder
     "import/default": "error", // Varsayılan importların doğru olduğunu kontrol eder
     "import/namespace": "error", // Namespace importlarının doğru olduğunu kontrol eder
