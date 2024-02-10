@@ -1,13 +1,15 @@
 import { MongoClient } from 'mongodb';
 
+// eslint-disable-next-line import/no-unused-modules
 export async function connectDatabase() {
   const client = await MongoClient.connect(
-    'mongodb+srv://maximilian:8ZO3ycZqJ23kWBQx@cluster0.ntrwp.mongodb.net/events?retryWrites=true&w=majority',
+    'mongodb+srv://rbeyza:08082008@cluster0.ecah26w.mongodb.net/',
   );
 
   return client;
 }
 
+// eslint-disable-next-line import/no-unused-modules
 export async function insertDocument(client, collection, document) {
   const db = client.db();
 
@@ -16,6 +18,7 @@ export async function insertDocument(client, collection, document) {
   return result;
 }
 
+// eslint-disable-next-line import/no-unused-modules
 export async function getAllDocuments(client, collection, sort) {
   const db = client.db();
 
